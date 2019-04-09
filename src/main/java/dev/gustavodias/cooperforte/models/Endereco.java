@@ -34,4 +34,7 @@ public class Endereco implements Serializable {
         @Column(name = "NO_UF")
         private String uf;
 
+        @Column(name = "NR_ENDERECO")
+        private Long numero;
+
 }
