@@ -30,7 +30,7 @@ public class Usuario implements UserDetails, Serializable {
 
     @ManyToMany
     @JoinTable(
-            name = "usuarios_roles",
+            name = "tb_usuarios_roles",
             joinColumns = @JoinColumn(name = "usuario_id", referencedColumnName = "usuario"),
             inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "nomePermissao"))
     private List<Permissoes> permissoes;
